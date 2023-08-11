@@ -1,1 +1,250 @@
-# juliocareaga.github.io
+<!DOCTYPE html>
+<html>
+<body style="background-color:#b9bdbf; 
+             width: 100%; 
+             max-width: 100%;">
+<style>
+table, th, td {
+  border:0px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+img {
+  margin-left: 100px;
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonbar1 {                                         /*                                                  mitad arriba*/
+  background-image: linear-gradient(0deg, rgba( 0, 140, 186 ,1) 30%, rgba( 0, 140, 186 ,0.55) 99%, rgba( 0, 140, 186 ,0.2) 51%);
+  /*background-color: #99999b; /*#008CBA;*/
+  border: none;
+  color: black;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.pbar1{
+  background-color: #727275;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.header_nav {
+  width: 800px;
+  height: 400px;
+}
+.header_nav ul {
+  list-style: none;
+}
+.header_nav ul ul {
+  display: none;
+}
+.header_nav ul ul #nav_button:hover>ul {
+  display: block;
+}
+.header_nav ul ul li >ul {
+  display: none;
+}
+.header_nav ul li:hover >ul {
+  display: block;
+}
+mark.blue {
+    color: #143b89;
+    background: none;
+}
+
+/*
+.submit {
+    background-color: #4098d3;
+    color: #fff;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+}
+*/
+
+.bt {
+  color:white; 
+  background-color:#008CBA; 
+  width:100%; 
+  border:none; 
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+  height: 50px;
+  min-width: 120px
+}
+
+.bt a {
+  color:white; 
+  text-align: center;
+  background-color: red;
+}
+
+.bt:hover {
+  background-color: #062d65; /*  */
+  color: white;
+}
+.bt:active {
+  background-color: #062d65;
+  color: white;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
+/* padding-top, padding-right, padding-bottom, padding-left */
+/*======== Barras expandibles =========*/
+
+/* div*/
+.barfordown {
+  border-style: solid;
+  border-color: #062d65;
+  margin-left:7%; 
+  color:white; 
+  background-color: #96D4D4;
+  width:75%; 
+  padding: 10px 10px 10px 50px; 
+  text-align: center;
+  float: center;
+  overflow: hidden;
+}
+
+/* div*/
+.dropdown {
+  margin-left:10px; 
+  color:white; 
+  background-color:#96D4D4;
+  text-align: left;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown a {
+  color:white; 
+  background-color:#008CBA; 
+  border:none; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+  background-color: #062d65;
+  color: white;
+}
+
+.dropdown:hover{
+  background-color: #96D4D4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*Links inside the class dropdown-content*/
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #d5d6d8;
+}
+
+/* Hover for links in the dropdown-content */
+.dropdown-content a:hover {
+  background-color: #062d65;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:active {
+  background-color: #062d65;
+  color: white;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+/*======== End Barras expandibles =========*/
+
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar*/
+</style>
+
+
+
+<!--tr:hover {background-color: #c04b23;}-->
+<!--Comando titulo-->
+<title> Julio Careaga </title> 
+
+
+<hr style="margin-left:-10px;margin-top:-10px;height:40px;border-width:-10px;color:gray;background-color:#062d65">
+
+<div id="demobox" style = "background-color: white; margin-left:15%; width: 70%; box-shadow: -1px -1px 10px 5px teal"> <!-- Cuadrado de al medio -->
+
+<p style="color:white">
+.
+</p>
+<p style = "color:black;font-family: 'Brush Script MT', cursive; margin-left:20px; margin-top:20px; font-size:25px;">
+Julio Careaga
+</p> 
+</p>
+<p style = "color:black;font-family: 'Luminari', cursive; margin-left:20px; margin-top:2px; font-size:18px;">
+Postdoctoral fellow at <a href="https://www.ci2ma.udec.cl/" style= "color:#143b89;"><b>YYYYY</b></a> <br>
+<mark style = "color:#848689; background: none"> 
+University of YYYYYY </mark> <br>
+<mark class = "blue">
+juliocareaga</mark> at <mark class="blue">yyyy / webpage in preparation. </mark>
+<br>
+</p> 
+
+
+
